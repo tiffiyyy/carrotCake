@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Tiffany's Favorite Carrot Cake</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section id="home" class="screen active">
+      <h1>Tiffany's Favorite Carrot Cake!</h1>
+      <p>Check Out the Original Recipes:<br>
+          <a href="https://www.inspiredtaste.net/25753/carrot-cake-recipe">Carrot Cake Recipe</a> <br>
+          <a href="https://sugarspunrun.com/cream-cheese-frosting/">Cream Cheese Recipe</a>
+      </p>
+      <button onclick="goToScreen('ingredients')">Ingredients</button>
+      <button>Cake Recipe</button>
+      <button>Cream Cheese Recipe</button>
+    </section>
+    <section id="ingredients" class="screen">
+      <h1 class="header">Ingredients</h1>
+      <div class="container">
+        <p class="text-bold">Carrot Cake Ingredients<br></p>
+        <p class="text">
+          2 cups (260g) all-purpose flour (leveled) <br>
+          2 teaspoons baking soda (leveled) <br>
+          1/2 teaspoon fine sea salt <br>
+          1 ½ teaspoons ground cinnamon <br>
+          1 ¼ cups (295ml) vegetable oil <br>
+          1 cup (200g) granulated sugar <br>
+          1 cup (190g) lightly packed brown sugar <br>
+          1 teaspoon vanilla extract <br>
+          4 large eggs, at room temperature <br>
+          3 cups (300g) grated peeled carrots (2) <br>
+          1 cup (120g) coarsely chopped pecans <br>
+          1/2 cup (70g) raisins <br>
+        </p>
+        <p class="text-bold">Cream Cheese Frosting Ingredients<br></p>
+        <p class="text">
+          ½ cup (1 stick) unsalted butter softened <br>
+          8 oz cream cheese softened (brick-style) <br>
+          1 teaspoon vanilla extract <br>
+          ¼ teaspoon salt <br>
+          4 cups powdered sugar
+        </p>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

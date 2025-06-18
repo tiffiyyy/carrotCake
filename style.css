@@ -1,0 +1,44 @@
+.header {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32.662px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container {
+    width: 339px;
+    height: 359px;
+    flex-shrink: 0;
+    background-color: #1e1e1e; 
+    padding: 16px;
+    border-radius: 12px;
+  }  
+
+.text-bold {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}

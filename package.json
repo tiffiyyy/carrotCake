@@ -1,0 +1,24 @@
+{
+  "name": "carrotcake",
+  "version": "1.0.0",
+  "description": "This app will walk you through how to make my favorite carrot cake recipe!",
+  "homepage": "https://github.com/tiffiyyy/carrotCake#readme",
+  "bugs": {
+    "url": "https://github.com/tiffiyyy/carrotCake/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiffiyyy/carrotCake.git"
+  },
+  "license": "ISC",
+  "author": "Tiffany Le",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^36.4.0"
+  }
+}
