@@ -1,58 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta
+    <!-- <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
+    />-->
+
+    <!-- note: the csp was blocking the onclick button events- must troubleshoot later-->
+    
     <title>Tiffany's Favorite Carrot Cake</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <section id="home" class="screen active">
-      <h1>Tiffany's Favorite Carrot Cake!</h1>
-      <p>Check Out the Original Recipes:<br>
-          <a href="https://www.inspiredtaste.net/25753/carrot-cake-recipe">Carrot Cake Recipe</a> <br>
-          <a href="https://sugarspunrun.com/cream-cheese-frosting/">Cream Cheese Recipe</a>
-      </p>
+      <h1 class="header" style="font-size: 30px">Tiffany's Favorite Carrot Cake!</h1>
+      <img src="images/CarrotCake.png" class="cake-image" alt="Carrot Cake">
       <button onclick="goToScreen('ingredients')">Ingredients</button>
-      <button>Cake Recipe</button>
-      <button>Cream Cheese Recipe</button>
+      <button onclick="goToScreen('cake_recipe')">Cake Recipe</button>
+      <button onclick="goToScreen('cream_cheese_recipe')">Cream Cheese Recipe</button>
+      <p><br><br>Check Out the Original Recipes:<br>
+        <a href="https://www.inspiredtaste.net/25753/carrot-cake-recipe" target="_blank" rel="noopener noreferrer">Carrot Cake Recipe</a>
+        <a href="https://sugarspunrun.com/cream-cheese-frosting/" target="_blank" rel="noopener noreferrer">Cream Cheese Recipe</a>
+      </p>
     </section>
+
     <section id="ingredients" class="screen">
       <h1 class="header">Ingredients</h1>
-      <div class="container">
+      <div class="cake-recipe">
         <p class="text-bold">Carrot Cake Ingredients<br></p>
-        <p class="text">
-          2 cups (260g) all-purpose flour (leveled) <br>
-          2 teaspoons baking soda (leveled) <br>
-          1/2 teaspoon fine sea salt <br>
-          1 ½ teaspoons ground cinnamon <br>
-          1 ¼ cups (295ml) vegetable oil <br>
-          1 cup (200g) granulated sugar <br>
-          1 cup (190g) lightly packed brown sugar <br>
-          1 teaspoon vanilla extract <br>
-          4 large eggs, at room temperature <br>
-          3 cups (300g) grated peeled carrots (2) <br>
-          1 cup (120g) coarsely chopped pecans <br>
-          1/2 cup (70g) raisins <br>
-        </p>
+        <ul class="text">
+          <li>2 cups (260g) all-purpose flour (leveled)</li>
+          <li>2 teaspoons baking soda (leveled)</li>
+          <li>1/2 teaspoon fine sea salt</li>
+          <li>1 ½ teaspoons ground cinnamon</li>
+          <li>1 ¼ cups (295ml) vegetable oil</li>
+          <li>1 cup (200g) granulated sugar</li>
+          <li>1 cup (190g) lightly packed brown sugar</li>
+          <li>1 teaspoon vanilla extract</li>
+          <li>4 large eggs, at room temperature</li>
+          <li>3 cups (300g) grated peeled carrots (2)</li>
+          <li>1 cup (120g) coarsely chopped pecans</li>
+          <li>1/2 cup (70g) raisins</li>
+        </ul>
+        <br>
         <p class="text-bold">Cream Cheese Frosting Ingredients<br></p>
-        <p class="text">
-          ½ cup (1 stick) unsalted butter softened <br>
-          8 oz cream cheese softened (brick-style) <br>
-          1 teaspoon vanilla extract <br>
-          ¼ teaspoon salt <br>
-          4 cups powdered sugar
-        </p>
+        <ul class="text">
+          <li>½ cup (1 stick) unsalted butter softened</li>
+          <li>8 oz cream cheese softened (brick-style)</li>
+          <li>1 teaspoon vanilla extract</li>
+          <li>¼ teaspoon salt</li>
+          <li>4 cups powdered sugar</li>
+        </ul>
       </div>
+    </section>
+
+    <section id="cake_recipe" class="screen">
+      <h1 class="header">Cake Recipe</h1>
+    </section>
+
+    <section id="cream_cheese_recipe" class="screen">
+      <h1 class="header">Cream Cheese Recipe</h1>
     </section>
     <script src="main.js"></script>
   </body>
