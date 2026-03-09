@@ -16,11 +16,19 @@
   </head>
   <body>
     <section id="home" class="screen active">
-      <h1 class="header" style="font-size: 30px">Tiffany's Favorite Carrot Cake!</h1>
+      <h1 class="header" style="font-size: 40px">Tiffany's Favorite Carrot Cake!</h1>
       <img src="images/CarrotCake.png" class="cake-image" alt="Carrot Cake">
-      <button onclick="goToScreen('ingredients')">Ingredients</button>
-      <button onclick="goToScreen('cake_recipe')">Cake Recipe</button>
-      <button onclick="goToScreen('cream_cheese_recipe')">Cream Cheese Recipe</button>
+      <div class="buttons">
+        <button class="image-button" onclick="goToScreen('ingredients')">
+          <img src="./images/Ingredients.png" alt="Ingredients">
+        </button>
+        <button class="image-button" onclick="goToScreen('cake_recipe')">
+          <img src="./images/CakeRecipe.png" alt="Cake Recipe">
+        </button>
+        <button class="image-button" onclick="goToScreen('cream_cheese_recipe')">
+          <img src="./images/CreamRecipe.png" alt="Cream Cheese Recipe">
+        </button>
+      </div>
       <p><br><br>Check Out the Original Recipes:<br>
         <a href="https://www.inspiredtaste.net/25753/carrot-cake-recipe" target="_blank" rel="noopener noreferrer">Carrot Cake Recipe</a>
         <a href="https://sugarspunrun.com/cream-cheese-frosting/" target="_blank" rel="noopener noreferrer">Cream Cheese Recipe</a>
@@ -55,9 +63,17 @@
           <li>4 cups powdered sugar</li>
         </ul>
       </div>
-      <button onclick="goToScreen('home')">Home</button>
-      <button onclick="goToScreen('cake_recipe')">Cake Recipe</button>
-      <button onclick="goToScreen('cream_cheese_recipe')">Cream Cheese Recipe</button>
+      <div class="buttons">
+        <button class="image-button" onclick="goToScreen('home')">
+          <img src="./images/Home.png" alt="Home">
+        </button>
+        <button class="image-button" onclick="goToScreen('cake_recipe')">
+          <img src="./images/CakeRecipe.png" alt="Cake Recipe">
+        </button>
+        <button class="image-button" onclick="goToScreen('cream_cheese_recipe')">
+          <img src="./images/CreamRecipe.png" alt="Cream Cheese Recipe">
+        </button>
+      </div>
     </section>
 
     <section id="cake_recipe" class="screen">
@@ -75,9 +91,17 @@
           <li>Let the cake cool for 15 minutes before frosting.</li>
         </ol>
       </div>
-      <button onclick="goToScreen('home')">Home</button>
-      <button onclick="goToScreen('ingredients')">Ingredients</button>
-      <button onclick="goToScreen('cream_cheese_recipe')">Cream Cheese Recipe</button>
+      <div class="buttons">
+        <button class="image-button" onclick="goToScreen('home')">
+          <img src="./images/Home.png" alt="Home">
+        </button>
+        <button class="image-button" onclick="goToScreen('ingredients')">
+          <img src="./images/Ingredients.png" alt="Ingredients">
+        </button>
+        <button class="image-button" onclick="goToScreen('cream_cheese_recipe')">
+          <img src="./images/CreamRecipe.png" alt="Cream Cheese Recipe">
+        </button>
+      </div>
     </section>
 
     <section id="cream_cheese_recipe" class="screen">
@@ -90,9 +114,17 @@
           <li>Now you're ready to frost your cakes!</li>
         </ol>
       </div>
-      <button onclick="goToScreen('home')">Home</button>
-      <button onclick="goToScreen('ingredients')">Ingredients</button>
-      <button onclick="goToScreen('cake_recipe')">Cake Recipe</button>
+      <div class="buttons">
+        <button class="image-button" onclick="goToScreen('home')">
+          <img src="./images/Home.png" alt="Home">
+        </button>
+        <button class="image-button" onclick="goToScreen('ingredients')">
+          <img src="./images/Ingredients.png" alt="Ingredients">
+        </button>
+        <button class="image-button" onclick="goToScreen('cake_recipe')">
+          <img src="./images/CakeRecipe.png" alt="Cake Recipe">
+        </button>
+      </div>
     </section>
     <script src="main.js"></script>
   </body>

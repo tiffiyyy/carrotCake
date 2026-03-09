@@ -8,7 +8,7 @@
     color: #FFF;
     text-align: center;
     font-family: Inter;
-    font-size: 32.662px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -51,7 +51,10 @@
 }
 
 .screen.active {
-    display: block; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0; 
 }
 
 html, body {
@@ -62,10 +65,15 @@ html, body {
 }
 
 .cake-image {
-    width: 359px;
-    height: 359px;
+    width: 300px;
+    height: 300px;
     flex-shrink: 0;
     aspect-ratio: 1/1;
+}
+
+.buttons {
+    display: flex; 
+    flex-direction: row;
 }
 
 .cake-recipe {
@@ -75,4 +83,32 @@ html, body {
     padding: 10px;
     flex-shrink: 0;
     color: #FFF;
+}
+
+.image-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-button img {
+  width: 90px; 
+  height: auto;
+  display: block;
+  transition: transform 0.1s;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.image-button:hover img {
+  transform: scale(1.05);
+}
+
+.image-button:active img {
+  transform: scale(0.95);
 }
